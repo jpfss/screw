@@ -59,7 +59,7 @@ public class MariaDBDocumentationBuilderTest extends AbstractDocumentationExecut
             //生成文件路径
             .fileOutputDir(fileOutputDir)
             //文件类型
-            .fileType(EngineFileType.HTML)
+            .fileType(EngineFileType.MD)
             //生成模板实现
             .produceType(EngineTemplateType.freemarker).build();
 
