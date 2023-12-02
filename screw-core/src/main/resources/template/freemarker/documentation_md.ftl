@@ -31,11 +31,11 @@
 **文档描述：** ${description!''}
 </#if>
 
-| 表名                  | 说明       |
-| :---: | :---: |
+| 序号 | 表名                  | 说明       |
+| :---: | :---: | :---: |
 <#list tables>
 <#items as t>
-| [${t.tableName!''}](#${t.tableName!''}) | ${t.remarks!''} |
+| ${t?index+1} | [${t.tableName!''}](#${t.tableName!''}) | ${t.remarks!''} |
 </#items>
 </#list>
 <#list tables><#items as t>
